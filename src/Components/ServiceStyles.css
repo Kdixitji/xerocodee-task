@@ -1,0 +1,221 @@
+.service {
+  background-image: url("../Assets/servicebg.jpg");
+  height: 100vh;
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  width: 160px;
+  height: 50px;
+  margin: 2% 8%;
+  flex-shrink: 1;
+}
+
+.service-box {
+  position: fixed;
+  top: 100px;
+  left: 15%;
+  width: 1100px;
+  height: 600px;
+  flex-shrink: 1;
+  border-radius: 35px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  text-align: center;
+}
+
+.service-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.service-btn {
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+  background: #fff;
+  width: 260px;
+  height: 60px;
+  flex-shrink: 0;
+  color: #002;
+  text-align: center;
+  font-family: Nunito;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%; /* 30px */
+  text-transform: capitalize;
+  cursor: pointer;
+}
+.service-btn:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.service-btn:active {
+  background: #1f64ff;
+  color: #fff;
+}
+
+.input-wrapperss,
+.input-wrappers {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 5%;
+}
+
+.input_fieldss,
+.service-input {
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+  border-radius: 4px;
+  color: var(--text);
+  padding: 8px;
+  padding-right: 200px;
+  background: transparent;
+  transition: border 0.2s;
+}
+
+.input_fieldss::placeholder,
+.input_fields::placeholder {
+  color: transparent;
+}
+
+.input_fieldss:placeholder-shown ~ .input_labelss,
+.input_fields:placeholder-shown ~ .input_labels {
+  font-size: 1rem;
+  cursor: text;
+  color: var(--secondary);
+  top: 75px;
+}
+
+.input_fields:placeholder-shown ~ .input_labels {
+  top: 20px;
+}
+
+label,
+.input_fieldss:focus ~ .input_labelss {
+  position: absolute;
+  top: 2px;
+  padding: 0 10px;
+  background-color: #fff;
+  display: block;
+  font-size: 14px;
+  left: 10px;
+  color: var(--secondary);
+  transition: 0.3s;
+}
+
+.input_fields:focus ~ .input_labels {
+  position: absolute;
+  top: 5px;
+  padding: 0 10px;
+  background-color: #fff;
+  display: block;
+  font-size: 14px;
+  left: 10px;
+  color: var(--secondary);
+  transition: 0.3s;
+}
+
+.input_fieldss:focus ~ .input_labelss,
+.service-inputs {
+  color: var(--secondary);
+}
+
+.input_fieldss:focus,
+.input_fields:focus {
+  border: 1px solid var(--primary);
+  outline: 1px solid var(--primary);
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5%;
+  margin-left: 25%;
+}
+
+.submit {
+  color: #fff;
+  border-radius: 5px;
+  background: #1f64ff;
+  width: 111px;
+  height: 35px;
+  flex-shrink: 0;
+  border: none;
+  cursor: pointer;
+  margin: 55px 0 0 20px;
+  padding: 5px 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    margin: 1% 0%;
+  }
+  .service-box {
+    width: auto;
+    left: 5%;
+    top: 30px;
+    height: max-content;
+  }
+
+  .service-btns {
+    flex-direction: column;
+    column-gap: 20px;
+    margin: 1% 12%;
+  }
+
+  .service-btn {
+    margin: 10px 0;
+  }
+  .input-wrapperss,
+  .input-wrappers {
+    margin-top: 0;
+    margin-left: -50px;
+  }
+  .input_fieldss,
+  .service-input {
+    padding-right: 50px;
+  }
+
+  .submit {
+    margin: 20px 0 10px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .service-box {
+    width: auto;
+    height: max-content;
+    left: 5%;
+    right: 5%;
+  }
+
+  .service-btns {
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .service-btn {
+    width: 300px;
+    margin: 15px 0;
+  }
+  .input-wrapperss,
+  .input-wrappers {
+    margin-left: -100px;
+  }
+  .input_fieldss,
+  .service-input {
+    padding-right: auto;
+  }
+  .submit {
+    margin: 20px 0 10px 0;
+  }
+}

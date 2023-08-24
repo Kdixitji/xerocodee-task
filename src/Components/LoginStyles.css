@@ -1,0 +1,168 @@
+:root {
+  --primary: rgb(86, 86, 189); /* Define your primary color here */
+  --secondary: rgb(33, 32, 32); /* Define your secondary color here */
+  --text: black; /* Define your text color here */
+}
+.login-left {
+  margin: 5% 10%;
+}
+
+.logo {
+  position: relative;
+  left: 35%;
+}
+
+.login-left h1 {
+  font-size: 1.4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 5% 50%;
+  font-weight: 800;
+}
+
+.box {
+  background-color: #fff;
+  padding: 2px;
+  max-width: fit-content;
+  width: 100%;
+  padding-top: 2px;
+  border-radius: 16px;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.input-wrapper {
+  position: relative;
+  padding: 15px 0 0;
+}
+
+.input_field {
+  border: 1px solid var(--primary);
+  font-size: 1rem;
+  border-radius: 4px;
+  color: var(--text);
+  padding: 8px;
+  padding-right: 200px;
+  background: transparent;
+  transition: border 0.2s;
+}
+
+.input_field::placeholder {
+  color: transparent;
+}
+
+.input_field:placeholder-shown ~ .input_label {
+  font-size: 1rem;
+  cursor: text;
+  color: var(--secondary);
+  top: 20px;
+}
+
+label,
+.input_field:focus ~ .input_label {
+  position: absolute;
+  top: 5px;
+  padding: 0 10px;
+  background-color: #fff;
+  display: block;
+  font-size: 14px;
+  left: 8px;
+  color: var(--secondary);
+  transition: 0.3s;
+}
+
+.input_field:focus ~ .input_label {
+  color: var(--secondary);
+}
+
+.input_field:focus {
+  border: 1px solid var(--primary);
+  outline: 1px solid var(--primary);
+}
+
+.input_icon {
+  position: absolute;
+  right: -30px;
+  bottom: -20px;
+  width: 35px;
+  height: 35px;
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.signup {
+  width: 400px;
+  padding: 10px 0;
+  background-color: rgb(0, 0, 253);
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.signup:hover {
+  background-color: rgb(71, 71, 249);
+}
+
+.login-bottom {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  margin-top: 0;
+}
+
+.git {
+  width: 250px;
+  margin-left: -10px;
+  border: 1px solid gray;
+  background-color: transparent;
+  text-align: center;
+  border-radius: 3px;
+  color: rgb(32, 32, 32);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.git:hover {
+  background-color: #f1efef;
+}
+
+@media screen and (max-width: 480px) {
+  .login-left {
+    margin-left: 0;
+  }
+
+  .login-left h1 {
+    margin: 2% 40%;
+  }
+  .input-wrapper {
+    margin: 0 20%;
+  }
+  .input_field {
+    padding-right: 70px;
+  }
+  .signup {
+    width: 200px;
+    margin: 2% 30%;
+  }
+  .input_icon {
+    right: -120px;
+  }
+  .login-bottom {
+    flex-direction: column;
+    margin: 0 30%;
+  }
+
+  label,
+  .input_field:focus ~ .input_label {
+    font-size: 13px;
+  }
+}

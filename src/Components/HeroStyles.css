@@ -1,0 +1,15 @@
+.bg-photo {
+  margin: 11% 10% 12% 10%;
+}
+
+.bottom {
+  margin-top: 63px;
+  transform: translateX(-15.9%);
+}
+
+@media screen and (max-width: 600px) {
+  .bg-photo,
+  .bottom {
+    display: none;
+  }
+}

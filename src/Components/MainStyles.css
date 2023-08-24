@@ -1,0 +1,28 @@
+.main {
+  position: relative;
+  top: 5px;
+  left: 10%;
+  width: 900px;
+  height: 650px;
+  border-radius: 0px 35px 0px 35px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.line {
+  position: relative;
+  height: 70%;
+  margin: 10% 0 10% 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .main {
+    width: auto;
+    left: 1%;
+  }
+  .line {
+    display: none;
+  }
+}
